@@ -1,0 +1,895 @@
+@font-face {
+  font-family: myForte;
+  src: url(fonts/Forte.ttf);
+}
+
+@font-face {
+  font-family: SinkinSans400;
+  src: url(fonts/SinkinSans-400Regular.otf);
+}
+
+@font-face {
+  font-family: SinkinSans500;
+  src: url(fonts/SinkinSans-500Medium.otf);
+}
+
+@font-face {
+  font-family: SinkinSans600;
+  src: url(fonts/SinkinSans-600SemiBold.otf);
+}
+
+@font-face {
+  font-family: SinkinSans700;
+  src: url(fonts/SinkinSans-700Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+  line-height: 1.7;
+}
+
+h1 {
+  font-family: SinkinSans700;
+  font-size: 1.6875rem;
+}
+
+h2 {
+  font-family: SinkinSans700;
+  font-size: 1.375rem;
+}
+
+h3 {
+  font-family: SinkinSans700;
+  font-size: 1.125rem;
+}
+
+p, a, label, input {
+  color: #fff;
+  font-family: SinkinSans400;
+  font-size: 0.875rem;
+}
+
+.fLeft {
+  float: left;
+}
+
+.fRight {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col-1 {
+  float: left;
+  width: 50%;
+}
+
+/* Navigation Bar */
+.navigation {
+  background-color: #fff;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 0 15px #000;
+  position: absolute;
+  top: 0;
+  width: 90%;
+  margin: 0 5%;
+}
+
+/* Navigation List */
+.navigation ul {
+  list-style-type: none;
+}
+
+.navigation ul li a {
+  cursor: pointer;
+  color: #000;
+  display: block;
+  line-height: 0;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 30px;
+  margin: 20px 20px 20px 10px;
+}
+
+.navigation ul li a:hover {
+  color: #d62828;
+}
+
+/* Navigation - Login */
+.navigation ul li #login {
+  border: 2px solid #d62828;
+  margin-right: 40px;
+  border-radius: 10px;
+}
+
+.navigation ul li #login:hover {
+  background-color: #d62828;
+  color: white;
+}
+
+/* Navigation - Logo */
+.navigation ul li #logo {
+  color: #d62828;
+  line-height: 0;
+  font-family: myForte;
+  font-size: 1.875rem;
+}
+
+/* Slider */
+#slider {
+  background-image: radial-gradient(#f25454, #d62828);
+  padding: 100px 0 20px;
+  width: 100%;
+}
+
+.slider-container {
+  margin: 10px auto 20px;
+  width: 90%;
+}
+
+/* Slide-controller */
+.control {
+  margin: 20px 0;
+  width: 5%;
+}
+
+.control a {
+  border: 2px solid #fff;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.5625rem;
+  text-decoration: none;
+  padding: 30px 10px;
+  margin-top: 200px;
+}
+
+/* Slide-Content */
+.slider-content {
+  margin: 20px 0 0;
+  padding: 60px 0 40px;
+  width: 90%;
+}
+
+.slider-image {
+  padding: 20px;
+  position: relative;
+  width: 50%;
+}
+
+.slider-image img {
+  width: 70%;
+}
+
+.slider-text {
+  text-align: left;
+  padding: 40px;
+  margin: 60px 0;
+  width: 50%;
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+/* Slide-Buttons */
+.navigate-button, .see-more-button {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 25px;
+  margin: 10px 10px 0 0;
+}
+
+.navigate-button {
+  background-color: #fff;
+  color: #d62828;
+}
+
+.navigate-button:hover {
+  background-color: #f25454;
+  border: 2px solid #fff;
+  color: #fff;
+  box-shadow: 0 0 5px #000;
+}
+
+.see-more-button:hover {
+  background: #fff;
+  border: 2px solid #fff;
+  box-shadow: 0 0 5px #000;
+  color: #d62828;
+}
+
+/* Image Text */
+.img-text {
+  letter-spacing: 0.7px;
+  font-family: SinkinSans600;
+  position: absolute;
+}
+
+.market {
+  top: -2%;
+  left: 30%;
+}
+
+.health {
+  top: 2.5%;
+  left: 52%;
+}
+
+.park {
+  bottom: 22.5%;
+  right: 15%;
+}
+
+.phone-world {
+  bottom: 12%;
+  left: 10%;
+}
+
+/* Gallery Section */
+.gallery-link-bar {
+  border: 2px solid #d62828;
+  border-radius: 10px;
+  padding: 0 15px;
+  margin: 12px auto 10px;
+  width: 90%;
+}
+
+.gallery-link-bar ul {
+  list-style-type: none;
+}
+
+.gallery-link-bar ul li a {
+  background-color: #d62828;
+  border-radius: 10px;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin: 5px 9px;
+}
+
+.gallery-link-bar ul li a:hover {
+  box-shadow: 0 0 10px #000;
+}
+
+/* Gallery Images */
+.gallery {
+  margin: 2px auto;
+  width: 90%;
+}
+
+.images-box {
+  padding: 10px;
+  width: 25%;
+}
+
+.gallery-img {
+  border: 1px solid #d62828;
+  padding: 5px;
+  width: 100%;
+}
+
+.gallery-img:hover {
+  box-shadow: 0 0 10px #000;
+}
+
+/* Map Section */
+#map-container {
+  background-color: #d62828;
+  padding: 20px;
+  width: 100%;
+}
+
+.map-content {
+  margin: auto;
+  width: 90%;
+}
+
+/* Maps Image */
+.map {
+  width: 50%;
+}
+
+.map img {
+  border: 1px solid #fff;
+  padding: 10px;
+  width: 100%;
+}
+
+.map img:hover {
+  box-shadow: 0 0 10px #000;
+}
+
+/* Map Text */
+.map-text {
+  text-align: left;
+  padding: 40px 50px;
+  margin: 130px 0 0;
+  width: 50%;
+}
+
+/* Form Section */
+#form-container {
+  padding: 30px 0;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.form-content {
+  box-shadow: 0 0 10px #000;
+}
+
+.register {
+  padding: 30px 50px 20px;
+  width: 70%;
+}
+
+.register-login {
+  width: 30%;
+}
+
+/* Form Input */
+.register-form {
+  text-align: left;
+}
+
+.register-form h2 {
+  color: #545454;
+}
+
+.register-sec {
+  margin-bottom: 50px;
+}
+
+.form-pad {
+  padding: 20px 40px 20px 0;
+}
+
+.register-sec label {
+  color: #545454;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.register-sec input {
+  border: none;
+  border-bottom: 2px solid #adacac;
+  background-color: transparent;
+  padding: 5px 40px;
+}
+
+.register-sec input:focus {
+  border-bottom: 2px solid #545454;
+  outline: none;
+}
+
+.register-sec input[type=text], input[type=email], input[type=tel], input[type=password] {
+  color: #adacac;
+  font-size: 0.875rem;
+  width: 100%;
+}
+
+/* Input Icon */
+.register-sec .col-1 {
+  position: relative;
+}
+
+.icon {
+  color: #adacac;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 52%;
+  left: 1%;
+}
+
+.rotate {
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari prior 9.0 */
+  -moz-transform: rotate(90deg);
+  /* Mozilla  */
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* I agree checkbox */
+#check-container {
+  cursor: pointer;
+  color: #545454;
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#check-container input {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+#checkmark {
+  background-color: #545454;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+}
+
+#check-container:hover input~.checkmark {
+  background-color: #625f5f;
+}
+
+#checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+#checkmark:after {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* REGISTER Button */
+#register-button, #register-login-button {
+  background-color: #d62828;
+  border: 2px solid #d62828;
+  border-radius: 13px;
+  color: #fff;
+  font-family: SinkinSans500;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 8px 30px;
+  margin: 10px 10px 0 0;
+}
+
+#register-button:hover {
+  box-shadow: 0 1px 6px #000;
+}
+
+/* Login */
+.register-login {
+  background-color: #d62828;
+  text-align: left;
+  padding: 160px 40px;
+  width: 30%;
+}
+
+.register-login p {
+  margin-top: 10px;
+}
+
+#register-login-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  margin-top: 20px;
+}
+
+#register-login-button:hover {
+  box-shadow: 0 1px 6px #000;
+}
+
+.button-link {
+  display: inline-block;
+}
+
+/* Founder Section */
+#founder-container {
+  background-color: #d62828;
+  width: 100%;
+}
+
+.founder-content {
+  padding: 30px 20px;
+  margin: auto;
+  width: 90%;
+}
+
+.card-container {
+  float: left;
+  padding: 20px 90px 0;
+  margin: 20px 0 0 0;
+  width: 33.333%;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 1px 6px #000;
+}
+
+/* card Content */
+.card-image {
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+}
+
+.card-image img {
+  width: 100%;
+}
+
+.card-text {
+  text-align: left;
+  margin: 10px 0 0 0;
+  width: 100%;
+}
+
+.card-text h3, .card-text p {
+  color: #d62828;
+}
+
+.card-text a {
+  text-decoration: none;
+}
+
+.card-text a img {
+  margin: 10px 5px 0 0;
+  width: 7%;
+}
+
+/* Footer Section */
+#footer-container {
+  background-color: #012334;
+  padding: 40px 0;
+  width: 100%;
+}
+
+#footer-container p {
+  font-family: SinkinSans600;
+}
+
+/* Media Query */
+/* On Medium screens that are 992px or less*/
+@media screen and (max-width: 992px) {
+  .display-none {
+    display: none;
+  }
+
+  /* Navigation Bar */
+  .navigation ul li a {
+    font-size: 0.8125rem;
+    padding: 15px 20px;
+    margin: 20px 10px 20px 5px;
+  }
+
+  .navigation ul li #logo {
+    font-size: 1.5625rem;
+  }
+
+  /* Slider */
+  #slider {
+    padding: 150px 0 20px;
+  }
+
+  .slider-container {
+    padding: 0;
+  }
+
+  .slider-content {
+    padding: 0;
+    margin: 0;
+  }
+
+  .slider-image, .slider-text {
+    width: 100%;
+  }
+
+  /* Slider Content Text */
+  .slider-text {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .control a {
+    margin-top: 280px;
+  }
+
+  /* Gallery Section */
+  .gallery-link-bar ul li {
+    width: 100%;
+  }
+
+  /* Gallery - Image */
+  .images-box {
+    padding: 10px;
+    width: 50%;
+  }
+
+  /* Map Section */
+  .map, .map-text {
+    width: 100%;
+  }
+
+  .map-text {
+    text-align: center;
+    padding: 0;
+    margin: 20px 0 0;
+  }
+
+  /* Form Section */
+  .register {
+    width: 100%;
+  }
+
+  .register-login {
+    width: 100%;
+  }
+
+  .register-login {
+    text-align: center;
+    padding: 30px 40px;
+  }
+
+  .icon {
+    top: 53%;
+  }
+
+  /* Founder Section - Card */
+  .card-container {
+    padding: 20px 20px 0;
+  }
+
+  .card-image {
+    height: 250px;
+  }
+
+  .card-text h3, .card-text p {
+    line-height: 1.3;
+    padding-bottom: 8px;
+  }
+
+  .card-text a img {
+    width: 10%;
+  }
+}
+
+/* On Small screens that are 750px or less */
+@media screen and (max-width: 750px) {
+  h1 {
+    font-size: 1.1875rem;
+  }
+
+  h2 {
+    font-size: 1.0625rem;
+  }
+
+  p, a {
+    font-size: 0.875rem;
+  }
+
+  .display-none750 {
+    display: none;
+  }
+
+  /* Navigation Bar */
+  .navigation ul li a, .navigation ul .fLeft, .navigation ul .fRight {
+    float: none;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .navigation ul li #login {
+    margin: 10px;
+  }
+
+  /* Slider */
+  #slider {
+    padding: 290px 0 15px;
+  }
+
+  .control {
+    display: none;
+  }
+
+  .slider-content {
+    width: 100%;
+  }
+
+  /* Slider Image Text */
+  .img-text {
+    font-size: 0.75rem;
+  }
+
+  /* Slider Content Text */
+  .slider-text {
+    text-align: center;
+  }
+
+  /* Gallery - Image */
+  .images-box {
+    padding: 3px;
+    width: 100%;
+  }
+
+  /* Founder Section - Card */
+  .card-container {
+    padding: 20px 10px 0;
+  }
+
+  .card-text {
+    text-align: center;
+  }
+
+  .card-image {
+    height: 175px;
+  }
+
+  .card-text h3 {
+    font-size: 1rem;
+  }
+
+  .card-text p {
+    font-size: 0.8124rem;
+  }
+
+  .card-text a img {
+    width: 12%;
+  }
+}
+
+/* On Small screens that are 500px or less */
+@media screen and (max-width: 500px) {
+
+  /* Navigation Bar */
+  .navigation ul li a, .navigation ul .fLeft, .navigation ul .fRight {
+    float: none;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .navigation ul li #login {
+    margin: 10px;
+  }
+
+  /* Slider */
+  .control {
+    display: none;
+  }
+
+  .slider-content {
+    width: 100%;
+  }
+
+  .slider-image img {
+    width: 80%;
+  }
+
+  /* Slider Image Text */
+  .img-text {
+    font-size: 0.6875rem;
+  }
+
+  .market {
+    top: -2%;
+    left: 20%;
+  }
+
+  .health {
+    top: 2.5%;
+    left: 52%;
+  }
+
+  .park {
+    bottom: 24%;
+    right: 8%;
+  }
+
+  .phone-world {
+    bottom: 12%;
+    left: 6%;
+  }
+
+  /* Slider Content Text */
+  .slider-text {
+    text-align: center;
+  }
+
+  /* Form Section */
+  .col-1 {
+    width: 100%;
+  }
+
+  .form-pad {
+    padding: 10px 30px 10px 0;
+  }
+
+  .icon {
+    top: 55%;
+  }
+
+  .register-form h2 {
+    margin-bottom: 20px;
+  }
+
+  .agree-register-button {
+    margin-top: 20px;
+  }
+
+  /* Founder Section - Card */
+  .card-container {
+    width: 100%;
+    padding: 20px 60px;
+  }
+
+  .card-image {
+    height: 225px;
+  }
+
+  .card-text a img {
+    width: 8%;
+  }
+}
+
+/* On Small screens that are 450px or less */
+@media screen and (max-width: 450px) {
+
+  /* Slider Image Text */
+  .park {
+    bottom: 24%;
+    right: 5%;
+  }
+
+  /* Form - Register */
+  .register-sec input[type=text], input[type=email], input[type=tel], input[type=password] {
+    font-size: 0.875rem;
+  }
+
+  .icon {
+    top: 53%;
+  }
+
+  /* Founder Section - Card */
+  .card-container {
+    padding: 20px 40px;
+  }
+}
